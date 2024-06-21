@@ -1,0 +1,56 @@
+/* this is my grid lesson */
+
+/* grid-container class */
+.grid-container {
+  display: grid; /* this line converts the div into grid container*/
+  /* background-color: gray; */
+
+  /* specifying the column width */
+  /* grid-template-columns: 200px 200px 200px; */
+
+  /* you can as well make grid rows as follows*/
+  /* grid-template-rows: 200px 200px 200px; */
+
+  /* you can as well use fractional units such as fr */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  /* or use repeat() method if the fractional unit values are the same */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* you can as well combine both fixed and fractional units as follows */
+  /* grid-template-columns: 300px repeat(2,3fr); */
+
+  /* grid-auto-rows */
+  /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px; */
+
+  /* grid minmax */
+  /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto); */
+
+  /* column-gap */
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 30px; */
+
+  /* row-gap */
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  row-gap: 30px;
+}
+
+.one {
+  background-color: rgb(13, 235, 235);
+}
+
+.two {
+  background-color: rgb(226, 114, 9);
+}
+
+.three {
+  background-color: rgb(11, 235, 22);
+}
+
+/* div {
+    margin: 10px;
+} */
