@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change HTML Styles</title>
+  </head>
+  <body>
+    <h1>Change HTML Styles</h1>
+    <p>JavaScript can change HTML styles</p>
+    <hr />
+    <p style="background-color: red" id="red-bg">
+      I am a Paragraph with background-color set to red
+    </p>
+    <button
+      onclick="document.getElementById('red-bg').style.backgroundColor='yellow';"
+    >
+      Change Background to Yellow
+    </button>
+    <button onclick="document.getElementById('red-bg').style.fontSize='60px';">
+      Increase Font Size to 60px
+    </button>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide | Unhide Element</title>
+    <style>
+      div {
+        border: 2px solid blueviolet;
+        background-color: blueviolet;
+        color: whitesmoke;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hide | Unhide Element</h1>
+    <p>
+      JavaScript can hide and unhide element. Check out the following examples
+    </p>
+    <hr />
+    <div id="block">
+      <h3>Hide | Unhide Block</h3>
+      <p>
+        You can hide and unhide this block by clicking the respective buttons
+        below. give it a try.
+      </p>
+    </div>
+    <button onclick="document.getElementById('block').style.display='none';">
+      Hide
+    </button>
+    <button onclick="document.getElementById('block').style.display='block';">
+      Unhide
+    </button>
+  </body>
+</html>
