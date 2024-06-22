@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Attribute Value</title>
+  </head>
+  <body>
+    <h1>Change Attribute Value</h1>
+    <p>
+      JavaScript can change HTML attribute value. The example below uses this
+      concept to be swapping pictures of bulp on and bulp off at a click of a
+      button
+    </p>
+    <hr />
+    <button
+      onclick="document.getElementById('bulp-image').src='pic_bulbon.gif'"
+    >
+      Turn On
+    </button>
+    <img src="pic_bulboff.gif" id="bulp-image" alt="Bulb off Picture" />
+    <button
+      onclick="document.getElementById('bulp-image').src='pic_bulboff.gif'"
+    >
+      Turn Off
+    </button><hr>
+  </body>
+</html>
