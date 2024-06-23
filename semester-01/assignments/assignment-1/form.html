@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AltSchool Application Form</title>
+  </head>
+  <body>
+    <header>
+      <h3>
+        Already an AltSchooler?
+        <a href="https://portal.altschoolafrica.com/auth/login">Sign In!</a>
+      </h3>
+    </header>
+    <main>
+      <form action="">
+        <h3>Signup</h3>
+        <hr />
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="Enter first name"
+          required
+        />
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="Last-name"
+          placeholder="Enter last name"
+          required
+        />
+        <br />
+        <br />
+        <label for="gender">Gender</label>
+        <input
+          list="genders"
+          name="genders"
+          placeholder="Select gender"
+          required
+        />
+        <datalist id="genders">
+          <option value="Male"></option>
+          <option value="Female"></option>
+        </datalist>
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" required />
+
+        <br />
+        <br />
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter email address"
+          required
+        />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required placeholder="080-2639-4590" />
+        <br />
+        <br />
+        <label for="country">Country</label>
+        <input
+          list="country"
+          name="country"
+          required
+          placeholder="Select your country"
+        />
+        <datalist id="country">
+          <option value="Afghanistan"></option>
+          <option value="Albania"></option>
+          <option value="Algeria"></option>
+          <option value="Andorra"></option>
+          <option value="Angola"></option>
+          <option value="Antigua"></option>
+        </datalist>
+
+        <label for="residencee">State/City of Residence</label>
+        <input
+          type="text"
+          name="residence"
+          placeholder="Enter your city of residence"
+        />
+        <br />
+        <br />
+        <label for="channel">How did you hear about us?</label>
+        <input
+          list="channel"
+          name="channel"
+          required
+          placeholder="Select channel"
+        />
+        <datalist id="channel">
+          <option value="Twitter"></option>
+          <option value="Facebook"></option>
+          <option value="LinkedIn"></option>
+          <option value="Youtube"></option>
+          <option value="Friend"></option>
+          <option value="WhatsApp"></option>
+          <option value="Instagram"></option>
+          <option value="Bill Board"></option>
+          <option value="Sales Officer"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <label for="confirm-password">Confirm</label>
+        <input type="password" id="confirm-password" />
+        <p>
+          By clicking continue, I agree to
+          <a href="https://www.altschoolafrica.com/terms-and-conditions"
+            >Terms of Use</a
+          >
+          and acknowledge that I have read the
+          <a href="https://www.altschoolafrica.com/privacy-policy"
+            >Privacy Policy.</a
+          >
+          <br />
+          <br />
+          <input type="submit" value="Submit -->" />
+        </p>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <em>Tel: 0800ALTSCHOOL</em><br />
+      <em>©2024 AltSchool Africa. All rights reserved.</em>
+    </footer>
+  </body>
+</html>
