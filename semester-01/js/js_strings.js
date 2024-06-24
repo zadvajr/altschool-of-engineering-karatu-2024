@@ -24,4 +24,15 @@ console.log(letters.at(0)); //prints A
 console.log(letters.at(-1)); // prints G
 
 // Extracting strings parts
+// slice() method - slice extracts parts of string and returns it
+let fruits = "Apple, Banana, Cherry";
+let part = fruits.slice(7, 13);
+console.log(part); //prints Banana
 
+// if you omit the second parameter, the slice will slice up to the end
+console.log(fruits.slice(7)); //prints Banana, Cherry
+
+// if you use negative it will slice from the end of the string
+console.log(fruits.slice(-12, 13)); //prints nana
+
+// substring() method
