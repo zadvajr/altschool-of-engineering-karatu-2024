@@ -36,3 +36,23 @@ console.log(fruits.slice(7)); //prints Banana, Cherry
 console.log(fruits.slice(-12, 13)); //prints nana
 
 // substring() method
+console.log(fruits.substring(7, 13)); //prints Banana
+
+//substr() method
+console.log(fruits.substr(7, 6)); //prints Banana - 6 characters from index 7
+
+//converting strng to uppercase
+let txt = "Hello World";
+console.log(txt.toUpperCase()); //prints HELLO WORLD
+
+//converting string to lowercase
+let fname = "DANIEL";
+console.log(fname.toLowerCase()); //prints daniel
+
+//concat() - method joins two or more strings
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1.concat(" ", str2)); //prints Hello World
+
+//trim() - method removes whitespace from both sides of a string
+let str = "     Hello World!     "; //string with whitespace
