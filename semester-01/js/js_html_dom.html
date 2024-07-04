@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM</title>
+  </head>
+  <body>
+    <h1>HTML DOM Methods</h1>
+    <h2>The getElementById() method and innerHTML property</h2>
+    <p>
+      The getElementById() method returns the element that has the ID attribute
+      with the specified value.
+    </p>
+    <p id="demp">
+      This paragraph's content will be changed by dom method getElementById and
+      property innerHTML
+    </p>
+    <button onclick="changeContent()">Click me</button>
+    <script>
+      function changeContent() {
+        document.getElementById("demp").innerHTML = "Hello World! by Zadva";
+      }
+    </script>
+  </body>
+</html>
