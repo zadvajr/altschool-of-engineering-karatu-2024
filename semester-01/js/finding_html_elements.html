@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding HTML Elements in DOM Document</title>
+  </head>
+  <body>
+    <h1>Finding HTML Elements in DOM Document</h1>
+    <p>
+      This section is about finding HTML elements using the following dom
+      metheds.
+    </p>
+    <ul>
+      <li>document.getElementById()</li>
+      <li>document.getElementByTagName()</li>
+      <li>document.getElementByClassName()</li>
+    </ul>
+    <hr />
+    <h2>document.getElementById()</h2>
+    <p>
+      The document.getElementById() method returns the element that has the ID
+      attribute with the specified value.
+    </p>
+    <p id="demo">
+      This paragraph's content will be changed by dom method getElementById.
+    </p>
+    <button onclick="changeContent()">Click me</button>
+    <hr>
+    <h2>document.getElementByTagName()</h2>
+    <p>
+      The document.getElementByTagName() method returns a collection of all
+      elements in the document with the specified tag name, as a NodeList object.
+    </p>
+    <p>
+      The NodeList object represents a collection of nodes. The nodes can be
+      accessed by index numbers. The index starts at 0.
+    </p>
+    <hr>
+    <h2>document.getElementByClassName()</h2>
+    <script>
+      function changeContent() {
+        document.getElementById("demo").innerHTML = "Hello World! by Zadva";
+      }
+      const paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.color = "blue";
+        }
+    </script>
+  </body>
+</html>
