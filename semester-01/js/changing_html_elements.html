@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing HTML Elements</title>
+  </head>
+  <body>
+    <h1>Changing HTML Elements</h1>
+    <p>
+      This section is about changing HTML elements using the following dom
+      properties.
+    </p>
+    <ul>
+      <li>innerHTML</li>
+      <li>attribute</li>
+      <li>style.property</li>
+      <li>element.setAttribute() method</li>
+    </ul>
+    <hr />
+    <h2>innerHTML</h2>
+    <p>Change the innerHTML of an element</p>
+    <p id="demo">
+      This paragraph's content will be changed by dom property innerHTML.
+    </p>
+    <button onclick="changeContent()">Click me</button>
+    <hr />
+    <h2>attribute</h2>
+    <p>Change the attribute of an HTML Element</p>
+    <p id="bgcolor">
+      This paragraph's background color will be changed on clicking the button
+      below.
+    </p>
+    <button onclick="changeAttribute()">Click me</button>
+    <hr />
+    <h2>style.property</h2>
+    <p>Change the style property of an HTML Element</p>
+    <p id="style">
+      This paragraph's font size will be changed on clicking the button below.
+    </p>
+    <button onclick="changeStyle()">Click me</button>
+    <hr />
+    <h2>element.setAttribute() method</h2>
+    <p>Change the attribute of an HTML Element using setAttribute() method</p>
+    <p id="setattribute">
+      This paragraph's background color will be changed on clicking the button
+      below.
+    </p>
+    <button
+      onclick="document.getElementById('setattribute').setAttribute('style', 'background-color: green;')"
+    >
+      Click me
+    </button>
+    <script>
+      function changeContent() {
+        document.getElementById("demo").innerHTML = "Hello World! by Zadva";
+      }
+      function changeAttribute() {
+        document.getElementById("bgcolor").style.backgroundColor = "yellow";
+      }
+      function changeStyle() {
+        document.getElementById("style").style.fontSize = "30px";
+      }
+    </script>
+  </body>
+</html>
