@@ -17,7 +17,7 @@
       <li>document.getElementByClassName()</li>
     </ul>
     <hr />
-    <h2>document.getElementById()</h2>
+    <h2 class="class">document.getElementById()</h2>
     <p>
       The document.getElementById() method returns the element that has the ID
       attribute with the specified value.
@@ -26,26 +26,41 @@
       This paragraph's content will be changed by dom method getElementById.
     </p>
     <button onclick="changeContent()">Click me</button>
-    <hr>
-    <h2>document.getElementByTagName()</h2>
+    <hr />
+    <h2 class="class">document.getElementByTagName()</h2>
     <p>
       The document.getElementByTagName() method returns a collection of all
-      elements in the document with the specified tag name, as a NodeList object.
+      elements in the document with the specified tag name, as a NodeList
+      object.
     </p>
     <p>
       The NodeList object represents a collection of nodes. The nodes can be
       accessed by index numbers. The index starts at 0.
     </p>
-    <hr>
-    <h2>document.getElementByClassName()</h2>
+    <hr />
+    <h2 class="class">document.getElementByClassName()</h2>
+    <p>
+      The document.getElementByClassName() method returns a collection of all
+      elements in the document with the specified class name, as a NodeList
+      object.
+    </p>
+    <p>
+      The NodeList object represents a collection of nodes. The nodes can be
+      accessed by index numbers. The index starts at 0.
+    </p>
+    <hr />
     <script>
       function changeContent() {
         document.getElementById("demo").innerHTML = "Hello World! by Zadva";
       }
       const paragraphs = document.getElementsByTagName("p");
-        for (let i = 0; i < paragraphs.length; i++) {
-            paragraphs[i].style.color = "blue";
-        }
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.color = "blue";
+      }
+      const classes = document.getElementsByClassName("class");
+      for (let i = 0; i < classes.length; i++) {
+        classes[i].style.color = "red";
+      }
     </script>
   </body>
 </html>
