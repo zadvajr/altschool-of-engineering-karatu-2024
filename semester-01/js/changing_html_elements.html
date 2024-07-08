@@ -51,6 +51,19 @@
     >
       Click me
     </button>
+    <hr />
+    <h2>element.style.setProperty() method</h2>
+    <p>
+      Change the style property of an HTML Element using setProperty() method
+    </p>
+    <p id="setproperty">
+      This paragraph's font size will be changed on clicking the button below.
+    </p>
+    <button
+      onclick="document.getElementById('setproperty').style.setProperty('font-size', '60px')"
+    >
+      Click me
+    </button>
     <script>
       function changeContent() {
         document.getElementById("demo").innerHTML = "Hello World! by Zadva";
