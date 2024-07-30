@@ -43,7 +43,7 @@ switch (x) {
         console.log("Value1")
         break;
     case 'value2':
-        console.log("Value1")
+        console.log("Value2")
         break;
     default:
         console.log("No value")
