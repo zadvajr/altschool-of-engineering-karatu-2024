@@ -1,32 +1,25 @@
 // Create an array
-// let users = new Array(); // Using class method
-
+let users = new Array(); // Using class method
+console.log(users);
 // let items = ["John", "Mary", "Yemi", 20, 25.6, { theme: "dark" }];
 
 // console.log(items)
 // console.log(items.length)
 
-
 // Create an array of strings called animals.
 // let animals = ["Lion", "Tiger", "Pig"]
 // // index ==>  [ 0,         1       2  ]
-
 
 // // // Get values from the array
 // alert(animals[0]) //Lions
 // alert(animals[1]) //Tiger
 
-
-
 // // Update a value in the array
 // animals[2] = { name: "Goat", type: "herbivores" } // ["Lions", "Tiger", "Goat"]
 // console.log(animals)
 
-
 // // Get the length of the array
-// console.log(animals.lenght) // 3 
-
-
+// console.log(animals.lenght) // 3
 
 // // Array Methods
 
@@ -38,8 +31,6 @@
 // animals.pop()
 // console.log(animals) // ["Lions", "Tiger"]
 
-
-
 // // Remove a value from the beginning of the array
 // animals.shift()
 // console.log(animals) // ["Tiger",  "Pig"]
@@ -48,46 +39,36 @@
 // animals.unshift("Cheetah")
 // console.log(animals) // ["Cheetah", "Lions", "Tiger", "Pig"]
 
-
 // // Get the index of a value
 // console.log(animals.indexOf("Elephant")) // 1
-
 
 // // Get a slice of the array
 // let animals = ["Lions", "Tiger", "Pig", "Cheetah", "Jaguar"]
 
-// console.log(animals.slice(2)) 
-
+// console.log(animals.slice(2))
 
 // // Get a copy of the array
 // let copyOfanimals = animals.slice()
 
-
 // // Reverse the array
 // animals.reverse()
-// console.log(animals) 
+// console.log(animals)
 
 // // Sort the array
 // animals.sort()
 // console.log(animals) //  ['Lion', 'Pig', 'Tiger']
 
-
-
-
-let animals = ["Lion", "Tiger", "Pig"]
+let animals = ["Lion", "Tiger", "Pig"];
 
 // // iterate over the array with for...of
 // for (let animal of animals) {
 //     console.log(`This animal is: ${animal}`)
 // }
 
-
-
 // // iterate over the array with for...in
 // for (let index in animals) {
 //     console.log(`The index is ${index} and the value is ${animals[index]}`)
 // }
-
 
 // // iterate over the array with forEach
 // function displayEachAnimal(animal) {
@@ -95,7 +76,6 @@ let animals = ["Lion", "Tiger", "Pig"]
 // }
 
 // animals.forEach(displayEachAnimal)
-
 
 // animals.forEach((animal) => {
 //     console.log(`This animal is: ${animal}`)
@@ -112,7 +92,6 @@ let animals = ["Lion", "Tiger", "Pig"]
 
 // console.log(usernameInUppercase)
 
-
 // // iterate over the array with filter
 // let populations = [200, 100, 30, 4, 5, 60]
 
@@ -126,11 +105,7 @@ let animals = ["Lion", "Tiger", "Pig"]
 
 // console.log(populationGreaterThan30)
 
-
-
-
 // // 2D Arrays
 // let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 // console.log(matrix[2][1])
-
